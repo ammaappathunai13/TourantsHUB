@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_Registration_Login">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".2"
+        android:background="@color/gray"
+        android:scaleType="fitXY"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue"
+
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="உங்களுடைய விவரங்களை உள்ளிடவும்"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue"
+
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="(provide your details)"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight=".1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/uname"
+                    android:textColor="@color/brown_900"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="12dp"
+                    android:hint="பெயர் (Name)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:singleLine="true"
+
+                    android:id="@+id/uid"
+                    android:textColor="@color/brown_900"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="12dp"
+                    android:hint="பயனர் ஐடி (User Id)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:singleLine="true"
+
+                    android:id="@+id/upass"
+                    android:textColor="@color/brown_900"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="12dp"
+                    android:hint="கடவுச்சொல் (Password)"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:singleLine="true"
+
+                    android:textColor="@color/brown_900"
+                    android:textColorHint="@color/black"
+                    android:id="@+id/ucpass"
+                    android:layout_marginTop="12dp"
+                    android:textSize="17dp"
+                    android:inputType="textPassword"
+                    android:hint="கடவுச்சொல்லை உறுதிசெய் (Confirm pass)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:singleLine="true"
+
+                    android:id="@+id/uphone"
+                    android:textColor="@color/brown_900"
+                    android:textColorHint="@color/black"
+                    android:maxLength="10"
+                    android:layout_marginTop="12dp"
+                    android:hint="மொபைல் எண் (Mobile Number)"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/store"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="பதிவு செய்க (Register)"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

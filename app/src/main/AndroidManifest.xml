@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vjsm.sports.tourantshub">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/tourants"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tourants"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CodeVerification"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Home"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CShow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".KShow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".FShow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".VShow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CUpload"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".KUpload"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".FUpload"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".VUpload"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Maped"
+            android:screenOrientation="portrait"
+            />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDZnuoJc-GQESBaY7PBealuz6KciSf-DNw" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/tourants" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/tourants" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/blue_100" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="fcm_default_channel" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/tourants" />
+
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Cmain"
+            />
+        <activity android:name=".Kmain"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Fmain"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Vmain"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Details"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Ycshow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Ykshow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Yfshow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Yvshow"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".YoutubeApi"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".HomePage_Loader_TourantsHub"
+            android:screenOrientation="portrait"
+
+            android:label="@string/title_activity_home_page__loader__tourants_hub"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LoginPage"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".New_Registration_Login"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".User_Posts"
+            android:screenOrientation="portrait"
+
+            android:label="@string/title_activity_user__posts"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".User_Post"
+            android:screenOrientation="portrait"
+
+            android:label="@string/title_activity_user__post" />
+        <activity android:name=".Cricket_List"
+
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Kabaddi_List"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Football_List"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Volleyball_List"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".About_Our_Comapany"
+
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>
